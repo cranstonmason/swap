@@ -2,6 +2,9 @@
     <string name="app_name">Swap Prototype</string>
     <string name="action_settings">Settings</string>
     <string name="base_currency">Base Currency</string>
-
-    <!--<string name="section_format">Hello world from Section %1$d</string>-->
+    <string-array name="currency">
+        <item>USD</item>
+        <item>MYR</item>
+        <item>EUR</item>
+    </string-array>
 </resources>

@@ -22,6 +22,7 @@ public class Tab1 extends Fragment {
      */
     public Spinner baseCurr_spin;
     public Button checkRate;
+    public int index;
 
     @Nullable
     @Override
@@ -37,12 +38,31 @@ public class Tab1 extends Fragment {
         adapter.setDropDownViewResource(android.R.layout.simple_selectable_list_item);
         baseCurr_spin.setAdapter(adapter);
 
-        /*baseCurr_spin.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        /*
+        *  Spinner (Base rate drop down menu) declaration
+        * */
+        baseCurr_spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                index = position;
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
 
             }
-        });*/
+        });
+
+        /*
+        * Button onClick function declaration
+        * */
+        checkRate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
 
         return v;
 

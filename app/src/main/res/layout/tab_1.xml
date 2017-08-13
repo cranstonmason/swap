@@ -9,17 +9,16 @@
 
     <EditText
         android:id="@+id/baseCurr"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="43dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:singleLine="false"
         android:textSize="14sp" />
 
     <Spinner
@@ -36,10 +35,45 @@
         android:id="@+id/checkRate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/baseCurr_spin"
+        android:layout_alignRight="@+id/baseCurr_spin"
         android:layout_below="@+id/baseCurr"
-        android:layout_marginTop="42dp"
-        android:layout_toLeftOf="@+id/baseCurr_spin"
-        android:layout_toStartOf="@+id/baseCurr_spin"
+        android:layout_marginTop="61dp"
         android:text="@string/check_rates" />
+
+    <TextView
+        android:id="@+id/currency1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/baseCurr"
+        android:layout_alignStart="@+id/baseCurr"
+        android:layout_centerVertical="true"
+        android:text="0.0"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/currency2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/currency1"
+        android:layout_alignStart="@+id/currency1"
+        android:layout_below="@+id/currency1"
+        android:layout_marginTop="47dp"
+        android:text="0.0"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/currency3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/currency2"
+        android:layout_alignStart="@+id/currency2"
+        android:layout_below="@+id/currency2"
+        android:layout_marginTop="47dp"
+        android:text="0.0"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="14sp" />
 
 </RelativeLayout>

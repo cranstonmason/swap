@@ -2,7 +2,9 @@
     <string name="app_name">Swap Prototype</string>
     <string name="action_settings">Settings</string>
     <string name="base_currency">Base Currency</string>
+    <string name="check_rates">Check Rates</string>
     <string-array name="currency">
+        <item>Base currency</item>
         <item>USD</item>
         <item>MYR</item>
         <item>EUR</item>

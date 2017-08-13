@@ -2,29 +2,31 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:targetApi="14"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:targetApi="14">
 
 
     <EditText
         android:id="@+id/baseCurr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="41dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:layout_marginTop="41dp"
-        android:layout_marginLeft="11dp"
-        android:layout_marginStart="11dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:singleLine="false"
+        android:textSize="14sp" />
 
     <Spinner
         android:id="@+id/baseCurr_spin"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/baseCurr"
+        android:layout_above="@+id/checkRate"
         android:layout_alignTop="@+id/baseCurr"
         android:layout_toEndOf="@+id/baseCurr"
         android:layout_toRightOf="@+id/baseCurr"
@@ -35,9 +37,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/baseCurr"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="42dp"
         android:layout_toLeftOf="@+id/baseCurr_spin"
         android:layout_toStartOf="@+id/baseCurr_spin"
-        android:text="Check Rate" />
+        android:text="@string/check_rates" />
 
 </RelativeLayout>
